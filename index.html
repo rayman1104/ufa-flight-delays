@@ -295,43 +295,48 @@ a:focus-visible,tr:focus-visible{outline:2px solid var(--ontime); outline-offset
         <span class="toc-eyebrow">Ответ</span>
         <span class="toc-title">Месяц целиком</span>
       </a>
-      <a class="toc-item" href="#prichina">
+      <a class="toc-item" href="#svezhie">
         <span class="toc-num">02</span>
+        <span class="toc-eyebrow">Свежие дни</span>
+        <span class="toc-title">Что происходит прямо сейчас</span>
+      </a>
+      <a class="toc-item" href="#prichina">
+        <span class="toc-num">03</span>
         <span class="toc-eyebrow">Причина</span>
         <span class="toc-title">Дни с режимом «Беспилотная опасность»</span>
       </a>
       <a class="toc-item" href="#struktura">
-        <span class="toc-num">03</span>
+        <span class="toc-num">04</span>
         <span class="toc-eyebrow">Структура месяца</span>
         <span class="toc-title">Месяц состоит из двух разных режимов</span>
       </a>
       <a class="toc-item" href="#stambul">
-        <span class="toc-num">04</span>
+        <span class="toc-num">05</span>
         <span class="toc-eyebrow">Направление</span>
         <span class="toc-title">Стамбул — заметно хуже среднего</span>
       </a>
       <a class="toc-item" href="#peresadka">
-        <span class="toc-num">05</span>
+        <span class="toc-num">06</span>
         <span class="toc-eyebrow">Прикладное</span>
         <span class="toc-title">Как планировать пересадку в Стамбуле</span>
       </a>
       <a class="toc-item" href="#doma">
-        <span class="toc-num">06</span>
+        <span class="toc-num">07</span>
         <span class="toc-eyebrow">Прикладное</span>
         <span class="toc-title">Можно ли ждать задержку дома</span>
       </a>
       <a class="toc-item" href="#hudshiy-den">
-        <span class="toc-num">07</span>
+        <span class="toc-num">08</span>
         <span class="toc-eyebrow">Худший день</span>
         <span class="toc-title">10 августа: все вылеты до одного</span>
       </a>
       <a class="toc-item" href="#metod">
-        <span class="toc-num">08</span>
+        <span class="toc-num">09</span>
         <span class="toc-eyebrow">Метод</span>
         <span class="toc-title">Откуда цифры и где границы точности</span>
       </a>
       <a class="toc-item" href="#prilozhenie">
-        <span class="toc-num">09</span>
+        <span class="toc-num">10</span>
         <span class="toc-eyebrow">Приложение</span>
         <span class="toc-title">Все вылеты 10 августа</span>
       </a>
@@ -413,6 +418,76 @@ a:focus-visible,tr:focus-visible{outline:2px solid var(--ontime); outline-offset
     Среди тех, кого задержали, медиана 1 ч 26 мин, а 90-й перцентиль
     4 ч 33 мин: каждый десятый вылет уходит больше чем через четыре с половиной часа
     после расписания.</p>
+  </div>
+</section>
+
+<section id="svezhie">
+  <div class="eyebrow">Свежие дни</div>
+  <h2>Что происходит прямо сейчас</h2>
+  <div class="prose">
+    <p>Месячная выборка выше заканчивается 10 августа. Дальше данные берутся из другого
+    источника — онлайн-табло аэропорта снимается ежедневно, потому что оно хранит всего
+    три дня. Табло лучше по качеству: в нём <b>все</b> рейсы, а не 68%, и время отхода
+    от стоянки вместо отрыва колёс. Но сравнивать эти дни с месячным графиком напрямую
+    нельзя — определения разные.</p>
+  </div>
+
+  <div class="tablewrap">
+    <table>
+      <thead><tr><th class="num">День</th><th class="num">Вылетов</th><th class="num">Вовремя</th><th class="num">Отменено</th><th class="num">Медиана задержки</th><th class="num">>3 ч</th><th class="num">Режим БПЛА</th><th>Полнота</th></tr></thead>
+      <tbody>
+        <tr>
+          <td class="mono num">10.08</td>
+          <td class="mono num">59</td>
+          <td class="mono num">7 — 12%</td>
+          <td class="mono num">8</td>
+          <td class="mono num">3 ч 08 мин</td>
+          <td class="num"><span class="chip c-r7">39%</span></td>
+          <td class="num"><span class="verdict v-no">да</span></td>
+          <td class="dim">полные сутки</td>
+        </tr>
+        <tr>
+          <td class="mono num">11.08</td>
+          <td class="mono num">57</td>
+          <td class="mono num">24 — 42%</td>
+          <td class="mono num">0</td>
+          <td class="mono num">2 ч 03 мин</td>
+          <td class="num"><span class="chip c-r5">16%</span></td>
+          <td class="num"><span class="verdict v-no">да</span></td>
+          <td class="dim">исход 3 рейсов неизвестен</td>
+        </tr>
+        <tr>
+          <td class="mono num">12.08</td>
+          <td class="mono num">33</td>
+          <td class="mono num">20 — 61%</td>
+          <td class="mono num">0</td>
+          <td class="mono num">36 мин</td>
+          <td class="num"><span class="chip c-r2">6%</span></td>
+          <td class="num"><span class="verdict v-no">да</span></td>
+          <td class="dim">день ещё идёт</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="prose">
+    <p>Режим «Беспилотная опасность» объявляли во все эти дни, но тяжесть разная.
+    10 августа аэропорт стоял с 06:57 до 15:00, и в паузу попали 18 плановых рейсов —
+    вовремя ушли 12%. 11 августа режим ввели в 08:50 и сняли ограничения уже в 11:00:
+    пунктуальность 42%, отмен нет. 12 августа задело только утро — рейсы, стоявшие
+    в расписании между 05:25 и 08:30, ушли с задержкой от одного до четырёх часов,
+    а после 11 утра расписание вернулось в норму.</p>
+    <p class="note">Данные обновлены 12.08.2026 11:21. Последний день в таблице ещё
+    не закончен: посчитаны только рейсы, которые уже вылетели, поэтому доля вовремя
+    у него завышена — вечерний пик в неё пока не вошёл.</p>
+  </div>
+
+  <div class="callout">
+    <div class="eyebrow">Почему по 11 августа три рейса без исхода</div>
+    <p>Табло держит дату около трёх суток и затем стирает её. Если снимок не сделан
+    вовремя, финальный статус части рейсов теряется безвозвратно — восстановить его
+    неоткуда. По 11 августа так потеряны три рейса из шестидесяти, они исключены
+    из подсчёта, а не записаны в пунктуальные.</p>
   </div>
 </section>
 
